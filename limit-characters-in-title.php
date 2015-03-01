@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 Plugin Name: Limit Characters in Title
 Plugin URI: https://wordpress.org/plugins/limit-characters-in-title
