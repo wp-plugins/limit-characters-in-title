@@ -61,7 +61,7 @@ You should have received a copy of the GNU General Public License along with Lim
 * To limit characters in the title of your post or page, type in the "Number of characters" the value of your choice.
 
 
-* In opição "ellipsis (...)", you can choose whether or not the ellipsis at the end of the title.
+* In option "ellipsis (...)", you can choose whether or not the ellipsis at the end of the title.
 
 
 
@@ -76,6 +76,6 @@ You should have received a copy of the GNU General Public License along with Lim
 
 == Screenshots ==
 
-1. Editor with post box character limit in the title.
+1. Editor with postbox character limit in the title.
 
-2. Post Box with entry (number) "number of players" and Radio button "ellipsis (...)", with insertion opição or not the ellipsis.
+2. PostBox with entry (number) "Number of Characters" and Radio button "ellipsis (...)", with insertion option or not the ellipses.
