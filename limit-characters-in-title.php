@@ -33,9 +33,9 @@ if (!class_exists('Characters_Title')):
         public function lct_insert_meta_box($meta_boxes) {
             $types = get_post_types('', 'names');
             $prefix = 'lct_';
-            $meta_boxes[] = array('id' => 'limit_characters_in_title', 'title' => 'Limite de Caracteres no Título', 'pages' => $types, 'context' => 'side', 'priority' => 'high', 'show_names' => true, 'fields' => array(array('name' => 'Número de Caracteres', 'desc' => '', 'id' => $prefix . 'charlimit', 'type' => 'text_small', 'attributes' => array(
-            //'placeholder' => 'Número de Caracteres',
-            'size' => 3, 'type' => 'number', 'min' => '1', 'max' => '200', 'step' => '1'),), array('name' => 'Reticências (...)', 'id' => $prefix . 'suspension_points', 'type' => 'radio', 'options' => array('no' => 'Não', 'yes' => 'Sim',), 'default' => 'no',)));
+            $meta_boxes[] = array('id' => 'limit_characters_in_title', 'title' => 'Limite de Caracteres no T&iacute;tulo', 'pages' => $types, 'context' => 'side', 'priority' => 'high', 'show_names' => true, 'fields' => array(array('name' => 'Número de Caracteres', 'desc' => '', 'id' => $prefix . 'charlimit', 'type' => 'text_small', 'attributes' => array(
+            //'placeholder' => 'N&uacute;mero',
+            'size' => 3, 'type' => 'number', 'min' => '1', 'max' => '200', 'step' => '1'),), array('name' => 'Retic&ecirc;ncias (...)', 'id' => $prefix . 'suspension_points', 'type' => 'radio', 'options' => array('no' => 'N&atilde;o', 'yes' => 'Sim',), 'default' => 'no',)));
             return $meta_boxes;
         }
         /* Insert substr() in Title */
