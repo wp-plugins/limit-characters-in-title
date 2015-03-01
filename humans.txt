@@ -1,0 +1,19 @@
+/* TEAM */  
+
+WUDAN
+
+Developer: Francisco Isaías Oliveira
+Email Developer: isaiasskynet@hotmail.com
+Phone: +55 85 3497-1703
+Twitter: @isaiaswebnet
+From: Fortaleza, Ceará, Brasil
+
+/* THANKS */
+Name: Aghata
+
+/* PLUGIN */
+Plugin Name: Limit Characters in Title
+Plugin URI: https://wordpress.org/plugins/limit-characters-in-title
+Author: Isaías Oliveira
+Author URI: https://www.facebook.com/isaiaswebnet
+IDE: Notepad++
