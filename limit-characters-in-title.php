@@ -1,9 +1,9 @@
-ï»¿<?php
+<?php
 /*
 Plugin Name: Limit Characters in Title
 Plugin URI: https://wordpress.org/plugins/limit-characters-in-title
 Description: Limit the number of characters in Title.
-Author: IsaÃ­as Oliveira
+Author: Isaías Oliveira
 Author URI: https://www.facebook.com/isaiaswebnet
 Version: 0.1
 Text Domain: Limit-Characters-in-Title
@@ -50,19 +50,19 @@ class Characters_Title {
 	
 	$meta_boxes[] = array(
 		'id'         => 'limit_characters_in_title',
-		'title'      => 'Limite de Caracteres no TÃ­tulo',
+		'title'      => 'Limite de Caracteres no Título',
 		'pages'      => $types,
 		'context'    => 'side',
 		'priority'   => 'high',
 		'show_names' => true,
 		'fields'     => array(
 			array(
-				'name'			  => 'NÃºmero de Caracteres',
+				'name'			  => 'Número de Caracteres',
 				'desc'			  => '',
 				'id'			  => $prefix.'charlimit',
 				'type'			  => 'text_small',
     			'attributes'  	  => array(
-        			//'placeholder' => 'NÃºmero de Caracteres',
+        			//'placeholder' => 'Número de Caracteres',
         			'size'        => 3,
 					'type' 		  => 'number',
 					'min' 		  => '1', 
@@ -71,11 +71,11 @@ class Characters_Title {
     ),
 			),
 			array(
-    			'name'    => 'ReticÃªncias (...)',
+    			'name'    => 'Reticências (...)',
     			'id'      => $prefix.'suspension_points',
     			'type'    => 'radio',
     			'options' => array(
-        			'no'  => 'NÃ£o',
+        			'no'  => 'Não',
         			'yes' => 'Sim',
     		),
     			'default' => 'no',
@@ -112,11 +112,5 @@ class Characters_Title {
 
 /* Plugins Loaded */
 add_action( 'plugins_loaded', array( 'Characters_Title', 'get_instance' ), 0 );
-
-/* Installation method */
-register_activation_hook( dirname(__FILE__) . DIRECTORY_SEPARATOR . basename(__FILE__), array('limit-characters-in-title', 'install') );
-
-/* Uninstall Method */
-register_deactivation_hook( dirname(__FILE__) . DIRECTORY_SEPARATOR . basename(__FILE__), array('limit-characters-in-title', 'uninstall') );
 
 endif;  // End Limit_Characters_Title class_exists
