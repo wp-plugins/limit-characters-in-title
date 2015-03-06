@@ -40,12 +40,13 @@ if (!class_exists('Characters_Title')):
         }
         /* Insert substr() in Title */
         public function lct_insert_substr_title($title_limit) {
+            $prefix = 'lct_';
             global $post;
             if (in_the_loop() && $title_limit == $post->post_title) {
                 $custom = get_post_custom($post->ID);
-                $charlimit = $custom["lct_charlimit"][0];
-                $suspension = $custom["lct_suspension_points"][0] == 'yes' ? '...' : '';
-                $title_limit = $charlimit == '' ? $title_limit : substr($title_limit, 0, $charlimit) . $suspension;
+                $charlimit = isset($custom[$prefix."charlimit"][0]);
+				$suspension = isset($custom[$prefix."suspension_points"][0])=='yes' ? '...' : '';
+				$title_limit = $charlimit?substr($title_limit, 0, $charlimit).$suspension:$title_limit;
             }
             return $title_limit;
         }
